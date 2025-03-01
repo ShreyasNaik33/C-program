@@ -1,0 +1,153 @@
+#include <stdio.h>
+
+// Function to calculate the sum of proper divisors
+int sumOfDivisors(int num) {
+    int sum = 0;
+    for (int i = 1; i <= num / 2; i++) { // Check up to num/2 for efficiency
+        if (num % i == 0) {
+            sum += i;
+        }
+    }
+    return sum;
+}
+
+int main() {
+    int num;
+    
+    // Input from user
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    // Compute sum of proper divisors
+    int sum = sumOfDivisors(num);
+
+    // Determine and display result
+    if (sum == num) {
+        printf("%d is a Perfect number.\n", num);
+    } else if (sum > num) {
+        printf("%d is an Abundant number.\n", num);
+    } else {
+        printf("%d is a Deficient number.\n", num);
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int N=2125;
+    int n=N;
+    int pv=1000;
+    while(N!=0){
+        
+        int rem=N/pv;
+        printf("%d\n",rem);
+        N=N%pv;
+        pv=pv/10;}
+        while(n!=0)
+        {
+        int rem2=n%10;
+        printf("%d\n",rem2);
+        n=n/10; }
+        return 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
+    int main()
+    {
+        int n=23425;
+        int count=0;
+        int rev=0;
+        while(n!=0){
+            int rem=n%10;
+            count++;
+            rev=rev*10+rem;
+            n=n/10;
+        }
+        printf("%d",rev);
+    }
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+#include<stdio.h>
+ int main()
+ {
+    int num=12;
+    int numsq=num*num;
+    int revNum=0;
+    int revofnumsq=0;
+    while(num!=0){
+        int rem=num%10;
+        revNum=revNum*10+rem;
+        num=num/10;
+    }
+    int revNumsq=revNum*revNum;
+    
+    while(numsq!=0){
+        int rem=numsq%10;
+        revofnumsq=revofnumsq*10+rem;
+        numsq=numsq/10;
+    }
+    if(revofnumsq==revNumsq){
+        printf("Yes it is ADAM NO");
+    }
+    else
+    {
+        printf("No it is not an ADAM NO");
+    }
+ }
+ 
+    
