@@ -48,6 +48,37 @@ int main() {
 
 
 #include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+int main(){
+int N=12;
+int count=0;
+for(int i=1;i<=N;i++){
+if(N%i==0){
+    count++;
+}
+}
+printf("%d",count);
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
 int main()
 {
     int N=2125;
